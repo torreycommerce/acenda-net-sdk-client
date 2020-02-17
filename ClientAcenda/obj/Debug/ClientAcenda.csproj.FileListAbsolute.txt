@@ -11,3 +11,16 @@
 /Users/arrrrny/Developer/acenda-sdk/acenda/ClientAcenda/ClientAcenda/obj/Debug/ClientAcenda.csproj.CopyComplete
 /Users/arrrrny/Developer/acenda-sdk/acenda/ClientAcenda/ClientAcenda/obj/Debug/ClientAcenda.exe
 /Users/arrrrny/Developer/acenda-sdk/acenda/ClientAcenda/ClientAcenda/obj/Debug/ClientAcenda.pdb
+/Users/arrrrny/Developer/acenda-sdk/acenda-net-client-sdk/ClientAcenda/bin/Debug/ClientAcenda.exe.config
+/Users/arrrrny/Developer/acenda-sdk/acenda-net-client-sdk/ClientAcenda/bin/Debug/ClientAcenda.exe
+/Users/arrrrny/Developer/acenda-sdk/acenda-net-client-sdk/ClientAcenda/bin/Debug/ClientAcenda.pdb
+/Users/arrrrny/Developer/acenda-sdk/acenda-net-client-sdk/ClientAcenda/bin/Debug/AcendaSDK.dll
+/Users/arrrrny/Developer/acenda-sdk/acenda-net-client-sdk/ClientAcenda/bin/Debug/Newtonsoft.Json.dll
+/Users/arrrrny/Developer/acenda-sdk/acenda-net-client-sdk/ClientAcenda/bin/Debug/System.Net.Http.Formatting.dll
+/Users/arrrrny/Developer/acenda-sdk/acenda-net-client-sdk/ClientAcenda/bin/Debug/AcendaSDK.pdb
+/Users/arrrrny/Developer/acenda-sdk/acenda-net-client-sdk/ClientAcenda/bin/Debug/Newtonsoft.Json.xml
+/Users/arrrrny/Developer/acenda-sdk/acenda-net-client-sdk/ClientAcenda/obj/Debug/ClientAcenda.csprojAssemblyReference.cache
+/Users/arrrrny/Developer/acenda-sdk/acenda-net-client-sdk/ClientAcenda/obj/Debug/ClientAcenda.exe.config
+/Users/arrrrny/Developer/acenda-sdk/acenda-net-client-sdk/ClientAcenda/obj/Debug/ClientAcenda.csproj.CopyComplete
+/Users/arrrrny/Developer/acenda-sdk/acenda-net-client-sdk/ClientAcenda/obj/Debug/ClientAcenda.exe
+/Users/arrrrny/Developer/acenda-sdk/acenda-net-client-sdk/ClientAcenda/obj/Debug/ClientAcenda.pdb

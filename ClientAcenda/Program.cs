@@ -12,8 +12,8 @@ namespace ClientAcenda
 
       try
       {
-
-        ServiceFactory serviceFactory = new ServiceFactory("de68b3a16c43a9cc50eba78f2118bb13@acenda.com", "9be679e98cb861c1c50ff9498b7f1f1f", "netclient");
+        //Fill in below fields with client id, client secret and your store name
+        ServiceFactory serviceFactory = new ServiceFactory("client_id", "client_secret", "store_name");
         var product = (ProductService)serviceFactory.GetService(AcendaSDK.Enums.ServiceType.Product);
         var order = (OrderService)serviceFactory.GetService(AcendaSDK.Enums.ServiceType.Order);
         var inventory = (InventoryService)serviceFactory.GetService(AcendaSDK.Enums.ServiceType.Inventory);
@@ -42,14 +42,14 @@ namespace ClientAcenda
         }
         try
         {
-          //401
-          BaseDTO customerDeleteResult = customer.Delete("3191672");
+            //3191672 customer id
+            BaseDTO customerDeleteResult = customer.Delete("3191672");
         }
         catch (Exception ex)
         {
 
         }
-
+         //5 is variantId
         BaseDTO inventoryUpdateResult = inventory.Update("5", new VariantDTO() { inventory_quantity = "200" });
 
         BillingAddress billingAddress = new BillingAddress()
@@ -106,7 +106,7 @@ namespace ClientAcenda
 
         try
         {
-
+          //2562599 sample order id             
           var result = order.CreateFulfillments("2562599", new FulfillmentsDTO()
           {
             tracking_numbers = new List<string>() { "1Z999AA10123456784" },
@@ -118,7 +118,7 @@ namespace ClientAcenda
                     {
                         new FulfillmentItems()
                         {
-                            id = 74,
+                            id = 74,//item id inside order object
                             quantity  =1,
                         }
                     }
@@ -132,8 +132,8 @@ namespace ClientAcenda
 
         try
         {
-
-          var orderGetFUlfillmentsResult = order.GetFulfillments("2562611", "86");
+            //orderid,fulfillmentId
+          var orderGetFulfillmentsResult = order.GetFulfillments("2562611", "86");
         }
         catch (Exception ex)
         {
