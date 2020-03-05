@@ -49,9 +49,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AcendaSDK\AcendaSDK.csproj">
-      <Project>{19b36511-d64e-478b-991b-9d2d1cc49c0f}</Project>
-      <Name>AcendaSDK</Name>
+    <ProjectReference Include="..\..\acenda-net-sdk\acenda-net-sdk\AcendaSDK\acenda-net-sdk.csproj">
+      <Project>{19B36511-D64E-478B-991B-9D2D1CC49C0F}</Project>
+      <Name>acenda-net-sdk</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
