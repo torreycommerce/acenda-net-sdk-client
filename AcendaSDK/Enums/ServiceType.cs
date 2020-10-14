@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AcendaSDK.Enums
+﻿namespace AcendaSDK.Enums
 {
     public enum ServiceType
     {
@@ -12,7 +6,8 @@ namespace AcendaSDK.Enums
         Order = 2,
         Inventory = 3, 
         Fulfillment = 4, 
-        Customer  =5 
+        Customer  = 5,
+        Generic = 6
 
     }
 }

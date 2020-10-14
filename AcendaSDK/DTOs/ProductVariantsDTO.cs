@@ -50,7 +50,6 @@ namespace AcendaSDK.DTOs
 
     public class ProductVariantsDTO :BaseDTO
     {
-      
         public List<ProductVariantsResult> result { get; set; }
     }
 }

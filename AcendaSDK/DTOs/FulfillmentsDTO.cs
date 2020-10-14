@@ -4,7 +4,7 @@ namespace AcendaSDK.DTOs
 {
     public class FulfillmentsDTO
     {
-        public string  shipping_method { get; set; }
+        public string shipping_method { get; set; }
         public int? order_id { get; set; }
         public string status { get; set; }
         public string tracking_company { get; set; }
