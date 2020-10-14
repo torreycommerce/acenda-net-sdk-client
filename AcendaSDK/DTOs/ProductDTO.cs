@@ -8,7 +8,7 @@ namespace AcendaSDK.DTOs
 {
     public class ProductDTO : BaseDTO
     {
-        public Result result { get; set; }
+        public Product result { get; set; }
     }
 
     public class Variant

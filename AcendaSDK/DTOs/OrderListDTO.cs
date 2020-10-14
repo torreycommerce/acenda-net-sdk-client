@@ -10,7 +10,7 @@ namespace AcendaSDK.DTOs
     {
         public List<OrderListResult> result { get; set; }
 
-       
+
     }
     public class FraudResults
     {

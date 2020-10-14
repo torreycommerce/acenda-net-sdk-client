@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 namespace AcendaSDK.DTOs
 {
     public class ProductListDTO  :BaseDTO
-    {
-       
-        public List<Result> result { get; set; }
+    { 
+        public List<Product> result { get; set; }
     }
     public class VariantOption
     {
@@ -36,7 +35,7 @@ namespace AcendaSDK.DTOs
        
     }
 
-    public class Result
+    public class Product
     {
         public int id { get; set; }
         public string group { get; set; }
@@ -68,7 +67,6 @@ namespace AcendaSDK.DTOs
         public string thumbnail { get; set; }
         public string url { get; set; }
         public List<string> category { get; set; }
-        public object channelbot_enabled { get; set; }
         public List<object> collections { get; set; }
         public List<Variant> variants { get; set; }
         public List<Category> categories { get; set; }

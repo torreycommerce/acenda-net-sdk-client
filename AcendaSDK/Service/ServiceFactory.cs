@@ -19,7 +19,7 @@ namespace AcendaSDK.Service
             AuthorizationHeader.client_secret = clientSecret;
             AuthorizationHeader.grant_type = "client_credentials";
             AuthorizationHeader.scope = string.Empty;
-            StoreName = HelperFunctions.CreateMD5("netclient");
+            StoreName = HelperFunctions.CreateMD5(storeName);
             var authInfo = AuthorizationService.Authorize( clientId , clientSecret , StoreName);
               if(authInfo != null )
             {
@@ -28,7 +28,7 @@ namespace AcendaSDK.Service
             }
               
         }
-        public  IService GetService( Enums.ServiceType serviceType  )
+        public  IService GetService( Enums.ServiceType serviceType, string serviceName="acenda")
         {
              
            switch(serviceType )
@@ -64,16 +64,21 @@ namespace AcendaSDK.Service
                         createdDate = _authInfo.createdDate,
                         expires_in = _authInfo.expires_in
                     }, AuthorizationHeader.client_id, AuthorizationHeader.client_secret, StoreName);
+
+                case Enums.ServiceType.Generic:
+                    return GenericService.Instance(new AuthInfo()
+                    {
+                        access_token = _authInfo.access_token,
+                        authorizationHeader = _authInfo.authorizationHeader,
+                        createdDate = _authInfo.createdDate,
+                        expires_in = _authInfo.expires_in,
+                        
+                    }, AuthorizationHeader.client_id, AuthorizationHeader.client_secret, StoreName,serviceName);
                 default:
                     return null;
             } 
-            
-           
+   
         }
-
-       
-
-
     }
 
 }

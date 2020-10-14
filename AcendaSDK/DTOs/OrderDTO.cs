@@ -33,32 +33,6 @@ namespace AcendaSDK.DTOs
         public bool returnable { get; set; }
     }
 
-    public class Item2
-    {
-        public int id { get; set; }
-        public int order_id { get; set; }
-        public int product_id { get; set; }
-        public int variant_id { get; set; }
-        public string status { get; set; }
-        public string name { get; set; }
-        public string sku { get; set; }
-        public string vendor { get; set; }
-        public int quantity { get; set; }
-        public int fulfilled_quantity { get; set; }
-        public string fulfillment_status { get; set; }
-        public int ordered_quantity { get; set; }
-        public bool backorder { get; set; }
-        public int price { get; set; }
-        public int ordered_price { get; set; }
-        public string marketplace_name { get; set; }
-        public List<object> warnings { get; set; }
-        public string date_created { get; set; }
-        public string date_modified { get; set; }
-        public bool returnable { get; set; }
-        public int returnable_quantity { get; set; }
-        public bool taxable { get; set; }
-    }
-
     public class Fulfillment
     {
         public int id { get; set; }
@@ -70,7 +44,7 @@ namespace AcendaSDK.DTOs
         public List<object> tracking_urls { get; set; }
         public List<object> tracking_numbers { get; set; }
         public string shipping_method { get; set; }
-        public List<Item2> items { get; set; }
+        public List<Item> items { get; set; }
         public List<object> packages { get; set; }
     }
 
