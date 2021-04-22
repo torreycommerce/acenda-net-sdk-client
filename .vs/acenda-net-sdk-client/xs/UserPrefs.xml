@@ -1,20 +1,15 @@
 ﻿<Properties StartupConfiguration="{39FCDE6C-C26B-4C7F-B55E-505C97F7AD95}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="../acenda-net-sdk/acenda-net-sdk/AcendaSDK/DTOs/CreateCustomerDTO.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="../acenda-net-sdk/acenda-net-sdk/AcendaSDK/Service/CustomerService.cs" Line="6" Column="19" />
       <File FileName="ClientAcenda/Program.cs" Line="45" Column="89" />
-      <File FileName="../acenda-net-sdk/acenda-net-sdk/AcendaSDK/DTOs/CreateCustomerDTO.cs" Line="9" Column="41" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="acenda-net-sdk-client" expanded="True">
-            <Node name="acenda-net-sdk" expanded="True">
-              <Node name="DTOs" expanded="True">
-                <Node name="CreateCustomerDTO.cs" selected="True" />
-              </Node>
+          <Node name="acenda-net-sdk-client" expanded="True" selected="True">
+            <Node name="ClientAcenda" expanded="True">
+              <Node name="References" expanded="True" />
             </Node>
-            <Node name="ClientAcenda" expanded="True" />
           </Node>
         </State>
       </Pad>
