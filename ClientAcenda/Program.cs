@@ -13,7 +13,7 @@ namespace ClientAcenda
             try
             {
                 //Fill in below fields with client id, client secret and your store name
-                ServiceFactory serviceFactory = new ServiceFactory("<CLIENT_ID>", "<CLIENT_SECRET>", "<STORE_NAME>");
+                ServiceFactory serviceFactory = new ServiceFactory("3ed034cf215262b0d9c0a124e80158e6@acenda.com", "8f79d7cb1ee6f32af0fbf0359f1122c2", "botstore");
                 ProductService product = (ProductService)serviceFactory.GetService(AcendaSDK.Enums.ServiceType.Product);
                 OrderService order = (OrderService)serviceFactory.GetService(AcendaSDK.Enums.ServiceType.Order);
                 InventoryService inventory = (InventoryService)serviceFactory.GetService(AcendaSDK.Enums.ServiceType.Inventory);
@@ -58,6 +58,9 @@ namespace ClientAcenda
 
                 //Get Product By Id
                 ProductDTO productDTO = product.GetById<ProductDTO>("2");
+                GenericService variant = (GenericService)serviceFactory.GetService(AcendaSDK.Enums.ServiceType.Generic, "variant");
+
+                GenericResponseDTO response = variant.GetAllPaginated<GenericResponseDTO>(2, 100,"{'status':'active'}");
 
                 //Get Product Variant By Id
                 ProductVariantsDTO productVariants = product.GetVariants("2");

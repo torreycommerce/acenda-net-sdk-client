@@ -64,12 +64,13 @@ D:/asd/acenda-net-sdk-client/AcendaSDK/obj/Debug/AcendaSDK.pdb
 /Users/ahmettok/Developer/acenda/acenda-net-sdk-client/AcendaSDK/bin/Debug/System.Net.Http.Extensions.dll
 /Users/ahmettok/Developer/acenda/acenda-net-sdk-client/AcendaSDK/bin/Debug/System.Net.Http.Formatting.dll
 /Users/ahmettok/Developer/acenda/acenda-net-sdk-client/AcendaSDK/bin/Debug/System.Net.Http.Primitives.dll
-/Users/ahmettok/Developer/acenda/acenda-net-sdk-client/AcendaSDK/bin/Debug/System.Net.Http.WebRequest.dll
 /Users/ahmettok/Developer/acenda/acenda-net-sdk-client/AcendaSDK/bin/Debug/Newtonsoft.Json.xml
-/Users/ahmettok/Developer/acenda/acenda-net-sdk-client/AcendaSDK/bin/Debug/System.Net.Http.xml
-/Users/ahmettok/Developer/acenda/acenda-net-sdk-client/AcendaSDK/bin/Debug/System.Net.Http.WebRequest.xml
 /Users/ahmettok/Developer/acenda/acenda-net-sdk-client/AcendaSDK/obj/Debug/acenda-net-sdk.csprojAssemblyReference.cache
 /Users/ahmettok/Developer/acenda/acenda-net-sdk-client/AcendaSDK/obj/Debug/acenda-net-sdk.csproj.CoreCompileInputs.cache
 /Users/ahmettok/Developer/acenda/acenda-net-sdk-client/AcendaSDK/obj/Debug/acenda-net-sdk.csproj.CopyComplete
 /Users/ahmettok/Developer/acenda/acenda-net-sdk-client/AcendaSDK/obj/Debug/AcendaSDK.dll
 /Users/ahmettok/Developer/acenda/acenda-net-sdk-client/AcendaSDK/obj/Debug/AcendaSDK.pdb
+/Users/ahmettok/Developer/acenda/acenda-net-sdk-client/AcendaSDK/bin/Debug/System.Security.Cryptography.Algorithms.dll
+/Users/ahmettok/Developer/acenda/acenda-net-sdk-client/AcendaSDK/bin/Debug/System.Security.Cryptography.Encoding.dll
+/Users/ahmettok/Developer/acenda/acenda-net-sdk-client/AcendaSDK/bin/Debug/System.Security.Cryptography.Primitives.dll
+/Users/ahmettok/Developer/acenda/acenda-net-sdk-client/AcendaSDK/bin/Debug/System.Security.Cryptography.X509Certificates.dll

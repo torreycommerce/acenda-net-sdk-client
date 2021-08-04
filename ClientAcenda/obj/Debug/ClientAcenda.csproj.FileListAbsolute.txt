@@ -63,3 +63,4 @@ D:/asd/acenda-net-sdk-client/ClientAcenda/obj/Debug/ClientAcenda.pdb
 /Users/ahmettok/Developer/acenda/acenda-net-sdk-client/ClientAcenda/obj/Debug/ClientAcenda.csproj.CopyComplete
 /Users/ahmettok/Developer/acenda/acenda-net-sdk-client/ClientAcenda/obj/Debug/ClientAcenda.exe
 /Users/ahmettok/Developer/acenda/acenda-net-sdk-client/ClientAcenda/obj/Debug/ClientAcenda.pdb
+/Users/ahmettok/Developer/acenda/acenda-net-sdk-client/ClientAcenda/obj/Debug/ClientAcenda.exe.config

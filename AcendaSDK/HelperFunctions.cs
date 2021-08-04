@@ -29,7 +29,7 @@ namespace AcendaSDK
                 return sb.ToString().ToLower();
             }
         }
-        public static string CreateUrlFromParts(string storeHashed, string apiPath, string id, string accessToken)
+        public static string CreateUrlFromParts(string storeHashed, string apiPath, string id, string accessToken, string pagination = "", string query = "")
         {
             string url = string.Empty;
             if (!string.IsNullOrEmpty(id))
@@ -38,6 +38,15 @@ namespace AcendaSDK
             else
             {
                 url = Constants.BaseUrl + storeHashed + "/" + apiPath + "?access_token=" + accessToken;
+            }
+            if (!string.IsNullOrEmpty(query))
+            {
+                char[] charsToTrim = { '{', ' ', '}' };
+                url = url + "&query={" + Uri.EscapeUriString(query.Trim(charsToTrim)) + "}";
+            }
+            if (!string.IsNullOrEmpty(pagination))
+            {
+                url = url + "&" + pagination;
             }
             return url;
 
@@ -79,7 +88,7 @@ namespace AcendaSDK
         public static async Task<BaseDTO> HttpPut(string path, object obj)
         {
             HttpClient client = new HttpClient();
-           
+
             BaseDTO response = new BaseDTO();
             try
             {
@@ -87,7 +96,7 @@ namespace AcendaSDK
                 {
                     NullValueHandling = NullValueHandling.Ignore
                 });
-                HttpWebRequest request = WebRequest.CreateHttp( path);
+                HttpWebRequest request = WebRequest.CreateHttp(path);
                 request.Method = "PUT";
                 request.AllowWriteStreamBuffering = false;
                 request.ContentType = "application/json";
@@ -120,7 +129,7 @@ namespace AcendaSDK
         public static async Task<BaseDTO> HttpPost(string path, object obj)
         {
 
-           
+
             HttpClient client = new HttpClient();
 
             BaseDTO response = new BaseDTO();
@@ -137,7 +146,7 @@ namespace AcendaSDK
                 request.ContentType = "application/json";
                 request.Accept = "*/*";
                 request.SendChunked = false;
-                
+
                 using (var writer = new StreamWriter(request.GetRequestStream()))
                 {
                     writer.Write(serializedObject);

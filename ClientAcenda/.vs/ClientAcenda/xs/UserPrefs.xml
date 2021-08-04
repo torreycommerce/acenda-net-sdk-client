@@ -1,14 +1,17 @@
 ﻿<Properties StartupConfiguration="{39FCDE6C-C26B-4C7F-B55E-505C97F7AD95}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ClientAcenda/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
     <Files>
-      <File FileName="ClientAcenda/Program.cs" Line="23" Column="84" />
+      <File FileName="Program.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="acenda-net-sdk-client" expanded="True">
-            <Node name="acenda-net-sdk" selected="True" />
-            <Node name="ClientAcenda" expanded="True" />
+          <Node name="ClientAcenda" expanded="True">
+            <Node name="ClientAcenda" expanded="True">
+              <Node name="References" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Program.cs" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
@@ -17,9 +20,6 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.ClientAcenda PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <Debugger.DebugSourceFolders>
-    <String>/Users/arrrrny/Developer/acenda-sdk/acenda-net-client-sdk</String>
-  </Debugger.DebugSourceFolders>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

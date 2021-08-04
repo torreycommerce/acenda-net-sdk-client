@@ -101,6 +101,36 @@ namespace AcendaSDK.Service
 
             return genericResponseDto;
         }
+        public T GetAllPaginated<T>(int page = 0, int limit = 100, string query = "") where T : new()
+        {
+            Response response = new Response();
+            T genericResponseDto = new T();
+            var token = AuthorizationService.Authorize(_authParameters.ClientId, _authParameters.ClientSecret, _authParameters.StoreName);
+            var pagination = "page=" + page + "&limit=" + limit;
+            var url = HelperFunctions.CreateUrlFromParts(_authParameters.StoreName, "api/" + _serviceName, "", token.access_token, pagination, query);
+            var result = HelperFunctions.HttpGet(url).GetAwaiter().GetResult();
+            if (result.IsSuccessStatusCode)
+            {
+                response.HttpStatusCode = result.StatusCode;
+                response.Result = result.Content.ReadAsAsync<T>().Result;
+                if (response.Result != null)
+                {
+                    genericResponseDto = (T)response.Result;
+                }
+                else
+                {
+                    return default(T);
+                }
+            }
+            else
+            {
+                response.HttpStatusCode = result.StatusCode;
+                return genericResponseDto;
+            }
+
+
+            return genericResponseDto;
+        }
 
         public T GetById<T>(string id) where T : new()
         {
