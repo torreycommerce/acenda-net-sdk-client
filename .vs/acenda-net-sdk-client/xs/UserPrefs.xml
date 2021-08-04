@@ -1,13 +1,19 @@
 ﻿<Properties StartupConfiguration="{39FCDE6C-C26B-4C7F-B55E-505C97F7AD95}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ClientAcenda/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AcendaSDK/Service/GenericService.cs">
     <Files>
       <File FileName="ClientAcenda/Program.cs" Line="23" Column="84" />
+      <File FileName="AcendaSDK/HelperFunctions.cs" Line="54" Column="74" />
+      <File FileName="AcendaSDK/Service/GenericService.cs" Line="26" Column="73" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="acenda-net-sdk-client" expanded="True">
-            <Node name="acenda-net-sdk" selected="True" />
+            <Node name="acenda-net-sdk" expanded="True">
+              <Node name="Service" expanded="True">
+                <Node name="GenericService.cs" selected="True" />
+              </Node>
+            </Node>
             <Node name="ClientAcenda" expanded="True" />
           </Node>
         </State>
